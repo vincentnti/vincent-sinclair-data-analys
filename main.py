@@ -124,11 +124,11 @@ def aggregate_death_per_condition(file_path):
 def aggregate_deaths_per_period(file_path): 
     data_frame = pd.read_excel(file_path, header=[0,1]) # header=[0,1] allows for sub header readings
 
-    header_items = data_frame.iloc[0:0]
-    periods = get_periods(header_items)
-
     selected_age = 'Aged 65 and over'
     selected_conditon_amount = data_frame[('Unnamed: 1_level_0', 'Number of PRE-EXISTING CONDITIONS')] == 1 
+
+    header_items = data_frame.iloc[0:0]
+    periods = get_periods(header_items)
 
     deaths_per_period = []
     for period in periods: 
