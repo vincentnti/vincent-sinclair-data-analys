@@ -131,7 +131,7 @@ def aggregate_death_per_condition(file_path):
     selected_sex = data_frame['Sex'] == 'Persons'
     selected_age = data_frame['Age'] == '65-69'
 
-    # Få tag på befintliga sjukdommar/inga sjukdommar och hur många som dött med dem
+    # Få tag på befintliga förhandsvillkor/icke förhandsvillkor och hur många som dött med dem
     pre_conditions = data_frame[selected_sex][selected_age]['Main pre-existing condition']
     deaths_per_condition = data_frame[selected_sex][selected_age]['Number of deaths']
 
@@ -141,7 +141,7 @@ def aggregate_deaths_per_period(file_path):
     # Ladda in excel fil i form av en data frame
     data_frame = pd.read_excel(file_path, header=[0,1]) # header=[0,1] allows for sub header readings
 
-    # Krav för att undersöka en åldersgrupp med någon typ av befintlig sjukdom
+    # Krav för att undersöka en åldersgrupp med någon typ av förhandsvillkor
     selected_age = 'Aged 65 and over'
     selected_conditon_amount = data_frame[('Unnamed: 1_level_0', 'Number of PRE-EXISTING CONDITIONS')] == 1 
 
