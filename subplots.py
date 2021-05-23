@@ -19,10 +19,10 @@ class VisualizerManager:
             rows=2,
             cols=2,
             subplot_titles=(
-                'Amount of deaths per condition / non condition (65-69 Years old) ',
-                'Death amount during different periods 2020 (65+ Years old) (with registerd pre-condition)',
-                'Amount of deaths per condition / non condition (65-69 Years old) ',
-                'Death amount during different periods 2020 (65+ Years old) (with registerd pre-condition)',
+                'Antal Covid-19 dödsfall med/utan förhandsvillkor (Mellan 65-69 år gamla) ',
+                'Antal Covid-19 dödsfall med ett förhandsvillkor under olika tids perioder (65+ år gamla)',
+                'Antal Covid-19 dödsfall med/utan förhandsvillko (Mellan 65-69 år gamla)',
+                'Antal Covid-19 dödsfall med ett förhandsvillkor under olika tids perioder (65+ år gamla)',
             ),
             specs=[
                 [{'type': 'xy'}, {'type': 'xy'}],
