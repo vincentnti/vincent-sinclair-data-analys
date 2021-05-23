@@ -103,7 +103,7 @@ dpc_pie_figure = px.pie()
 dpp_bar_figure = px.bar()
 dpp_radar_figure = px.line_polar()
 
-# Initiera applikationen
+# Skapa en instans av dash klassen
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # Bygg upp applikationens struktur
