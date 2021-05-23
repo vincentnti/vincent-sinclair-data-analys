@@ -220,4 +220,5 @@ def update_figure(dpc_value, a, dpp_value, b):
 
 if __name__ == "__main__":
     #app.run_server(debug = True)
+    # Kör applikationen
     app.run_server(debug=False)
